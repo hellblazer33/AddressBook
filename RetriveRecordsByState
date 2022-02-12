@@ -4,7 +4,7 @@ namespace LambdaExpressionDemo
     public static class LambdaExpression
     {
 
-        // UC1
+        
         public static void AddRecords(List<Person> listPersonInCity)
         {
             listPersonInCity.Add(new Person("203456876", "John", "Newyork", "NY"));
@@ -22,7 +22,7 @@ namespace LambdaExpressionDemo
         }
 
 
-        // UC2
+     
         public static void RetriveByState(List<Person> listPersonsInCity)
         {
             foreach (Person person in listPersonsInCity.FindAll(e => (e.State == "NY")))
@@ -31,3 +31,4 @@ namespace LambdaExpressionDemo
             }
 
         }
+    }
