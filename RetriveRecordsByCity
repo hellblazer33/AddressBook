@@ -23,11 +23,11 @@ namespace LambdaExpressionDemo
 
 
      
-        public static void RetriveByState(List<Person> listPersonsInCity)
+       public static void RetriveByCity(List<Person> listPersonsInCity)
         {
-            foreach (Person person in listPersonsInCity.FindAll(e => (e.State == "NY")))
+            foreach (Person person in listPersonsInCity.FindAll(e => (e.City == "Newyork")))
             {
-                Console.WriteLine("Name :" + person.Name + "\t\tState: " + person.State);
+                Console.WriteLine("Name :" + person.Name + "\t\tCity: " + person.City);
             }
 
         }
